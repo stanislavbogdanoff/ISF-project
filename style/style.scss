@@ -1,0 +1,395 @@
+@import 'variables';
+@import 'mixins';
+
+@import 'cause';
+@import 'careers';
+@import 'starships';
+@import 'leaders';
+
+@font-face {
+  font-family: 'Gothic';
+  src: url(fonts/SerifGothicStd.woff);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Gothic';
+  src: url(fonts/SerifGothicStd-ExtraBold.woff);
+  font-weight: bold;
+}
+
+html {
+  font-size: 18px;
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $bg;
+  color: $white;
+  font-size: 18px;
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+  background-image: url('../images/body-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+h1, h2, h3 {
+  font-family: 'Gothic', serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+section {
+  width: 100%;
+}
+.btn {
+  margin-top: 1.5rem;
+  padding: 0.3rem 2rem;
+  border: none;
+  border-radius: 60px;
+  color: $lightRed;
+  background: transparent;
+  font-size: 1.1rem;
+  font-family: 'Titillium Web', sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 0 0 $deepRed;
+  transition: box-shadow 0.5s ease-out;
+  &:hover {
+    box-shadow: inset 300px 0 0 0 $deepRed;
+    color: $white;
+  }
+  &:active {
+    transition: 0s;
+    background-color: $deepRed;
+    box-shadow: $redGlow;
+  }
+  a {
+    text-decoration: none;
+    color: $lightRed;
+  }
+}
+.link-gold {
+  @include hover-underline();
+  text-decoration: none;
+  color: $white;
+  font-size: 1.5rem;
+  &:hover {
+    color: $gold;
+    border-bottom: none;
+  }
+  &:after {
+    bottom: -5px;
+    background-color: $gold;
+  }
+}
+
+/********************************************** Header Start ******************************************************/
+
+.video {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  object-fit: cover;
+  transition: opacity 3s;
+}
+.stop-video {
+  position: fixed;
+  z-index: 2000;
+  top: 10rem;
+  left: 10rem;
+}
+
+/************ Nav Bar Start ************/
+
+header nav {
+  @include flex();
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  background-color: $bgHeader;
+}
+.logo-link {
+  @include flex();
+  gap: 0.5rem;
+  text-decoration: none;
+  h1 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: 1.1rem;
+    font-family: 'Scheherazade New', serif;
+    &:hover {
+      color: $lightRed;
+      text-shadow: 1px 1px 30px $lightRed;
+    }
+  }
+  img {
+    width: 35px;
+    height: 35px;
+  }
+}
+header .nav-ul {
+  @include flex();
+  gap: 3rem;
+  list-style: none;
+  li a {
+    @include hover-underline();
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    height: fit-content;
+    &:hover {
+      color: $lightRed;
+      text-shadow: 1px 1px 10px $lightRed;
+    }
+  }
+}
+
+/************ Nav Bar End ************/
+
+/********************************************** Header End ******************************************************/
+
+/********************************************** Body Start ******************************************************/
+
+/************ Hero Start *************/
+
+.hero {
+  @include flex();
+  width: 100%;
+  height: 100vh;
+  background: $bgMainHero;
+}
+.hero-content {
+  padding: 7rem 5rem;
+  height: 100%;
+  width: 50%;
+  h2 {
+    text-align: center;
+    font-size: 6rem;
+    line-height: 5rem;
+    &:first-child {
+      margin-top: 2rem;
+      letter-spacing: 0.34rem;
+    }
+  }
+  p {
+    margin-top: 1.5rem;
+    padding: 0 3rem 2.5rem;
+    border-bottom: 3px solid $white;
+  }
+  .btn-row {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .btn {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+  }
+}
+.hero-img {
+  background-image: url('../images/main-hero.jpg');
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+.logo-line {
+  @include flex();
+  width: 100%;
+  hr {
+    height: 3px;
+    width: 100%;
+    background-color: $white;
+  }
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+/************ Hero End *************/
+
+/************ Slogan Start **************/
+
+.slogan {
+  width: 100%;
+}
+.slogan-container {
+  @include flex();
+  width: 100%;
+  padding: 0.3rem 5rem;
+  background: $deepRed;
+  justify-content: center;
+  gap: 1rem;
+  .slogan-text {
+    @include flex();
+    flex-direction: column;
+    text-transform: uppercase;
+    width: fit-content;
+    text-align: center;
+    border-top: 1px solid $white;
+    border-bottom: 1px solid $white;
+  }
+  hr {
+    width: 30%;
+  }
+  h1 {
+    font-family: 'Scheherazade New', serif;
+  }
+  .lower {
+    line-height: 1.1rem;
+  }
+  .upper {
+    font-size: 0.75rem;
+    line-height: 0.7rem;
+  }
+}
+
+/************ Slogan End **************/
+
+/************ Features Start ************/
+
+.features {
+  padding: 5rem 0 0;
+  margin-bottom: 5rem;
+}
+.features-container {
+  width: fit-content;
+  padding: 5rem;
+  margin: 0 auto;
+  background: $bgGradient;
+  display: grid;
+  grid-template-columns: repeat(3, 17rem);
+  grid-template-rows: repeat(2);
+  grid-gap: 2rem;
+  border-radius: 10px;
+}
+.features-col {
+  text-align: center;
+  h3 {
+    color: $gold;
+  }
+}
+.features-icon {
+  width: 50px;
+  height: 50px;
+}
+
+/************ Features End ************/
+
+/************ Description Start *************/
+
+.desc {
+  width: 100%;
+  margin: 0;
+  padding: 5rem;
+  background-color: $descRed;
+  background-image: url('../images/agit-vader.jpg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position-x: 120%;
+}
+.desc-container {
+  width: 55%;
+  text-align: left;
+  h2 {
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin: 1.5rem 0 1rem;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+/************ Description End *************/
+
+/********************************************** Body End ******************************************************/
+
+
+/******************************************* Footer Start *****************************************************/
+
+footer {
+  background-color: $gradDark;
+  padding: 4rem 5rem 7rem;
+  hr {
+    size: 3px;
+    margin: 1rem 0 2rem;
+  }
+}
+footer .nav-ul {
+  @include flex();
+  gap: 3rem;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  li a {
+    @include hover-underline();
+    font-size: 1rem;
+    text-decoration: none;
+    color: $white;
+    height: fit-content;
+    &:hover {
+      color: $lightRed;
+      text-shadow: 1px 1px 10px $lightRed;
+    }
+  }
+}
+.media-ul {
+  @include flex();
+  margin-top: 3rem;
+  list-style: none;
+  gap: 2rem;
+  justify-content: center;
+}
+.media-link {
+  @include flex();
+  color: $white;
+  padding: 0.3rem;
+  background-color: $white;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 100%;
+  &:hover {
+    background-color: $lightRed;
+    box-shadow: $redGlow;
+  }
+}
+.media-icon {
+  color: $white;
+  height: 1rem;
+  width: 1rem;
+}
+
+.accolades {
+  background-color: black;
+  text-align: center;
+  font-size: 0.7rem;
+  a {
+    text-decoration: none;
+    color: $lightRed;
+    &:hover {
+      color: $white;
+      text-decoration: underline $lightRed;
+    }
+  }
+}
+
+/******************************************* Footer End *******************************************************/

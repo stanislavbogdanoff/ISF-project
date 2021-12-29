@@ -1,0 +1,90 @@
+@import 'variables';
+@import 'mixins';
+
+.career-hero {
+  @include sec-hero();
+}
+.career {
+  width: 100%;
+  align-items: center;
+  padding: 5rem;
+  margin-top: 5rem;
+} 
+.career-path {
+  @include flex();
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  flex-direction: row;
+  background: $bgGradient;
+  margin-bottom: 5rem;
+  border-radius: 10px;
+  @include fade-right();
+  p {
+    margin-bottom: 1rem;
+  }
+}
+#navy-trooper {
+  @include fade-left();
+}
+.career-img {
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+}
+#pilot {
+  .career-img {
+    background-image: url('../images/careers/pilot.jpg');
+  }
+}
+#navy-trooper {
+  .career-img {
+    background-image: url('../images/careers/navytrooper.png');
+  }
+}
+#stormtrooper {
+  .career-img {
+    background-image: url('../images/careers/stormtrooper.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+.career-content {
+  width: 60%;
+  background-color: $bgGradient;
+  padding: 4rem 5rem;
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: $gold;
+  }
+}
+#career-inquisitor {
+  @include block-ver();
+  @include fade-top();
+  padding: 0;
+  p {
+    margin-bottom: 1rem;
+  }
+  a {
+    @include hover-underline();
+    &:hover {
+      color: $lightRed;
+    }
+  }
+  #career-img-inquisitor {
+    background: url('../images/careers/inq.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 22rem;
+  }
+  div:last-child {
+    height: fit-content;
+    h2 {
+      font-size: 3rem;
+      color: $deepRed;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

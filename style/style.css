@@ -1,0 +1,1160 @@
+#cause-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url("../images/careers/careers-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../images/cause/cause-hero.png");
+  background-position: center;
+}
+
+#cause-hero div {
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+  -webkit-box-shadow: 0 0 99px 15px rgba(212, 212, 212, 0.9);
+          box-shadow: 0 0 99px 15px rgba(212, 212, 212, 0.9);
+  background-color: rgba(212, 212, 212, 0.5);
+  border-radius: 100%;
+}
+
+#cause-hero img {
+  height: 100%;
+  width: 100%;
+}
+
+#cause-hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #04080b;
+}
+
+#cause-hero h1 {
+  font-size: 4.5rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.cause {
+  width: 100%;
+  margin: 5rem 0;
+}
+
+.cause-item {
+  width: 100%;
+  padding: 5rem;
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.cause-item div:first-child {
+  width: 100%;
+  height: 20rem;
+  background-image: url("../images/cause/peace.jpg");
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cause-item div:last-child {
+  padding: 2rem 13rem;
+  text-align: center;
+  height: 15rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#151a23), to(#04080b));
+  background: linear-gradient(#151a23 0%, #04080b 100%);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.cause-item div:last-child h2 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #d68941;
+}
+
+.cause-item.active {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.cause-item #cause-freedom {
+  background-image: url("../images/cause/freedom.png");
+}
+
+.cause-item #cause-justice {
+  background-image: url("../images/cause/justice.png");
+}
+
+.cause-item #cause-security {
+  background-image: url("../images/cause/security.jpg");
+}
+
+.career-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url("../images/careers/careers-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.career-hero div {
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+  -webkit-box-shadow: 0 0 99px 15px rgba(212, 212, 212, 0.9);
+          box-shadow: 0 0 99px 15px rgba(212, 212, 212, 0.9);
+  background-color: rgba(212, 212, 212, 0.5);
+  border-radius: 100%;
+}
+
+.career-hero img {
+  height: 100%;
+  width: 100%;
+}
+
+.career-hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #04080b;
+}
+
+.career {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem;
+  margin-top: 5rem;
+}
+
+.career-path {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: -webkit-gradient(linear, left top, left bottom, from(#151a23), to(#04080b));
+  background: linear-gradient(#151a23 0%, #04080b 100%);
+  margin-bottom: 5rem;
+  border-radius: 10px;
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.career-path.active {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.career-path p {
+  margin-bottom: 1rem;
+}
+
+#navy-trooper {
+  opacity: 0;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#navy-trooper.active {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.career-img {
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+}
+
+#pilot .career-img {
+  background-image: url("../images/careers/pilot.jpg");
+}
+
+#navy-trooper .career-img {
+  background-image: url("../images/careers/navytrooper.png");
+}
+
+#stormtrooper .career-img {
+  background-image: url("../images/careers/stormtrooper.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.career-content {
+  width: 60%;
+  background-color: linear-gradient(#151a23 0%, #04080b 100%);
+  padding: 4rem 5rem;
+}
+
+.career-content h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #d68941;
+}
+
+#career-inquisitor {
+  width: 100%;
+  padding: 5rem;
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  padding: 0;
+}
+
+#career-inquisitor div:first-child {
+  width: 100%;
+  height: 20rem;
+  background-image: url("../images/cause/peace.jpg");
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#career-inquisitor div:last-child {
+  padding: 2rem 13rem;
+  text-align: center;
+  height: 15rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#151a23), to(#04080b));
+  background: linear-gradient(#151a23 0%, #04080b 100%);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#career-inquisitor div:last-child h2 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #d68941;
+}
+
+#career-inquisitor.active {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+#career-inquisitor p {
+  margin-bottom: 1rem;
+}
+
+#career-inquisitor a {
+  display: inline-block;
+  position: relative;
+}
+
+#career-inquisitor a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff2e2e;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+#career-inquisitor a:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+#career-inquisitor a:hover {
+  color: #ff2e2e;
+}
+
+#career-inquisitor #career-img-inquisitor {
+  background: url("../images/careers/inq.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 22rem;
+}
+
+#career-inquisitor div:last-child {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#career-inquisitor div:last-child h2 {
+  font-size: 3rem;
+  color: maroon;
+  margin-bottom: 1.5rem;
+}
+
+#starships-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url("../images/careers/careers-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../images/starships/starships-hero.jpg");
+}
+
+#starships-hero div {
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+  -webkit-box-shadow: 0 0 99px 15px rgba(212, 212, 212, 0.9);
+          box-shadow: 0 0 99px 15px rgba(212, 212, 212, 0.9);
+  background-color: rgba(212, 212, 212, 0.5);
+  border-radius: 100%;
+}
+
+#starships-hero img {
+  height: 100%;
+  width: 100%;
+}
+
+#starships-hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #04080b;
+}
+
+.starships-large {
+  width: 100%;
+  margin: 5rem 0;
+  padding: 11rem 10rem;
+  background-color: rgba(4, 8, 11, 0.6);
+  background-image: url("../images/starships/deathstar.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position-y: 2rem;
+  background-position-x: -5rem;
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.starships-large.active {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.starships-large-content {
+  margin-left: 60%;
+}
+
+.starships-large-content .btn-row {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.starships-large-content .btn-row .link-gold:hover {
+  color: #ff2e2e;
+}
+
+.starships-large-content .btn-row .link-gold:hover:after {
+  background-color: #ff2e2e;
+}
+
+.starships-large-content h2 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #ff2e2e;
+}
+
+.starships {
+  width: 100%;
+  margin: 5rem 0;
+  padding: 0 5rem;
+}
+
+.starships-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#151a23), to(#04080b));
+  background: linear-gradient(#151a23 0%, #04080b 100%);
+  border-radius: 10px;
+  margin-bottom: 6rem;
+  height: 80vh;
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.starships-item.active {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.starships-item p {
+  margin-bottom: 1rem;
+}
+
+.starships img {
+  width: 30rem;
+  padding: 3rem;
+}
+
+.starships-content {
+  padding: 0 9rem 0 5rem;
+}
+
+.starships-content h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #d68941;
+}
+
+#starships-cruiser img {
+  width: 35rem;
+  padding: 2rem;
+}
+
+#starships-cruiser .starships-content {
+  padding-left: 2rem;
+}
+
+#starships-destroyer img {
+  width: 40rem;
+}
+
+#starships-destroyer .starships-content {
+  padding-left: 1rem;
+  padding-right: 5rem;
+}
+
+#executor {
+  background-image: url("../images/starships/executor.png");
+  background-size: 110%;
+  background-position-y: 10rem;
+  background-position-x: 2rem;
+}
+
+#executor div {
+  margin-left: 0;
+  margin-right: 60%;
+}
+
+#leaders-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url("../images/careers/careers-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../images/leaders/leaders.jpg");
+  background-position: left;
+}
+
+#leaders-hero div {
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+  -webkit-box-shadow: 0 0 99px 15px rgba(212, 212, 212, 0.9);
+          box-shadow: 0 0 99px 15px rgba(212, 212, 212, 0.9);
+  background-color: rgba(212, 212, 212, 0.5);
+  border-radius: 100%;
+}
+
+#leaders-hero img {
+  height: 100%;
+  width: 100%;
+}
+
+#leaders-hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #04080b;
+}
+
+@font-face {
+  font-family: 'Gothic';
+  src: url(fonts/SerifGothicStd.woff);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Gothic';
+  src: url(fonts/SerifGothicStd-ExtraBold.woff);
+  font-weight: bold;
+}
+
+html {
+  font-size: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #060618;
+  color: #f2f2f2;
+  font-size: 18px;
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("../images/body-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+h1, h2, h3 {
+  font-family: 'Gothic', serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+section {
+  width: 100%;
+}
+
+.btn {
+  margin-top: 1.5rem;
+  padding: 0.3rem 2rem;
+  border: none;
+  border-radius: 60px;
+  color: #ff2e2e;
+  background: transparent;
+  font-size: 1.1rem;
+  font-family: 'Titillium Web', sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-box-shadow: inset 0 0 0 0 maroon;
+          box-shadow: inset 0 0 0 0 maroon;
+  -webkit-transition: -webkit-box-shadow 0.5s ease-out;
+  transition: -webkit-box-shadow 0.5s ease-out;
+  transition: box-shadow 0.5s ease-out;
+  transition: box-shadow 0.5s ease-out, -webkit-box-shadow 0.5s ease-out;
+}
+
+.btn:hover {
+  -webkit-box-shadow: inset 300px 0 0 0 maroon;
+          box-shadow: inset 300px 0 0 0 maroon;
+  color: #f2f2f2;
+}
+
+.btn:active {
+  -webkit-transition: 0s;
+  transition: 0s;
+  background-color: maroon;
+  -webkit-box-shadow: 0 0 30px 5px maroon;
+          box-shadow: 0 0 30px 5px maroon;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #ff2e2e;
+}
+
+.link-gold {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 1.5rem;
+}
+
+.link-gold:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff2e2e;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.link-gold:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.link-gold:hover {
+  color: #d68941;
+  border-bottom: none;
+}
+
+.link-gold:after {
+  bottom: -5px;
+  background-color: #d68941;
+}
+
+/********************************************** Header Start ******************************************************/
+.video {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: opacity 3s;
+  transition: opacity 3s;
+}
+
+.stop-video {
+  position: fixed;
+  z-index: 2000;
+  top: 10rem;
+  left: 10rem;
+}
+
+/************ Nav Bar Start ************/
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 5rem;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(4, 8, 11, 0.6);
+}
+
+.logo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.logo-link h1 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 1.1rem;
+  font-family: 'Scheherazade New', serif;
+}
+
+.logo-link h1:hover {
+  color: #ff2e2e;
+  text-shadow: 1px 1px 30px #ff2e2e;
+}
+
+.logo-link img {
+  width: 35px;
+  height: 35px;
+}
+
+header .nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+  list-style: none;
+}
+
+header .nav-ul li a {
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+header .nav-ul li a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff2e2e;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+header .nav-ul li a:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+header .nav-ul li a:hover {
+  color: #ff2e2e;
+  text-shadow: 1px 1px 10px #ff2e2e;
+}
+
+/************ Nav Bar End ************/
+/********************************************** Header End ******************************************************/
+/********************************************** Body Start ******************************************************/
+/************ Hero Start *************/
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(3, 6, 19, 0.897)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, rgba(3, 6, 19, 0.897) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.hero-content {
+  padding: 7rem 5rem;
+  height: 100%;
+  width: 50%;
+}
+
+.hero-content h2 {
+  text-align: center;
+  font-size: 6rem;
+  line-height: 5rem;
+}
+
+.hero-content h2:first-child {
+  margin-top: 2rem;
+  letter-spacing: 0.34rem;
+}
+
+.hero-content p {
+  margin-top: 1.5rem;
+  padding: 0 3rem 2.5rem;
+  border-bottom: 3px solid #f2f2f2;
+}
+
+.hero-content .btn-row {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.hero-content .btn {
+  display: block;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.hero-img {
+  background-image: url("../images/main-hero.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+
+.logo-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.logo-line hr {
+  height: 3px;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.logo-line img {
+  width: 2rem;
+  height: 2rem;
+}
+
+/************ Hero End *************/
+/************ Slogan Start **************/
+.slogan {
+  width: 100%;
+}
+
+.slogan-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0.3rem 5rem;
+  background: maroon;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.slogan-container .slogan-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.slogan-container hr {
+  width: 30%;
+}
+
+.slogan-container h1 {
+  font-family: 'Scheherazade New', serif;
+}
+
+.slogan-container .lower {
+  line-height: 1.1rem;
+}
+
+.slogan-container .upper {
+  font-size: 0.75rem;
+  line-height: 0.7rem;
+}
+
+/************ Slogan End **************/
+/************ Features Start ************/
+.features {
+  padding: 5rem 0 0;
+  margin-bottom: 5rem;
+}
+
+.features-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5rem;
+  margin: 0 auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#151a23), to(#04080b));
+  background: linear-gradient(#151a23 0%, #04080b 100%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (17rem)[3];
+      grid-template-columns: repeat(3, 17rem);
+  -ms-grid-rows: ()[2];
+      grid-template-rows: repeat(2);
+  grid-gap: 2rem;
+  border-radius: 10px;
+}
+
+.features-col {
+  text-align: center;
+}
+
+.features-col h3 {
+  color: #d68941;
+}
+
+.features-icon {
+  width: 50px;
+  height: 50px;
+}
+
+/************ Features End ************/
+/************ Description Start *************/
+.desc {
+  width: 100%;
+  margin: 0;
+  padding: 5rem;
+  background-color: #db141b;
+  background-image: url("../images/agit-vader.jpg");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position-x: 120%;
+}
+
+.desc-container {
+  width: 55%;
+  text-align: left;
+}
+
+.desc-container h2 {
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.desc-container p {
+  margin-bottom: 1rem;
+}
+
+/************ Description End *************/
+/********************************************** Body End ******************************************************/
+/******************************************* Footer Start *****************************************************/
+footer {
+  background-color: #04080b;
+  padding: 4rem 5rem 7rem;
+}
+
+footer hr {
+  size: 3px;
+  margin: 1rem 0 2rem;
+}
+
+footer .nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+  list-style: none;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .nav-ul li a {
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #f2f2f2;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+footer .nav-ul li a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff2e2e;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+footer .nav-ul li a:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+footer .nav-ul li a:hover {
+  color: #ff2e2e;
+  text-shadow: 1px 1px 10px #ff2e2e;
+}
+
+.media-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+  list-style: none;
+  gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.media-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f2f2f2;
+  padding: 0.3rem;
+  background-color: #f2f2f2;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 100%;
+}
+
+.media-link:hover {
+  background-color: #ff2e2e;
+  -webkit-box-shadow: 0 0 30px 5px maroon;
+          box-shadow: 0 0 30px 5px maroon;
+}
+
+.media-icon {
+  color: #f2f2f2;
+  height: 1rem;
+  width: 1rem;
+}
+
+.accolades {
+  background-color: black;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.accolades a {
+  text-decoration: none;
+  color: #ff2e2e;
+}
+
+.accolades a:hover {
+  color: #f2f2f2;
+  -webkit-text-decoration: underline #ff2e2e;
+          text-decoration: underline #ff2e2e;
+}
+
+/******************************************* Footer End *******************************************************/
+/*# sourceMappingURL=style.css.map */
