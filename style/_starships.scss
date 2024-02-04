@@ -1,0 +1,96 @@
+@import 'variables';
+@import 'mixins';
+
+#starships-hero {
+  @include sec-hero();
+  background-image: url('../images/starships/starships-hero.jpg');
+}
+.starships-large {
+  width: 100%;
+  margin: 5rem 0;
+  padding: 11rem 10rem;
+  background-color: $bgHeader;
+  background-image: url('../images/starships/deathstar.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position-y: 2rem;
+  background-position-x: -5rem;
+  @include fade-top();
+  &-content {
+    margin-left: 60%;
+    .btn-row {
+      width: 100%;
+      margin-top: 1rem;
+      .link-gold {
+        &:hover {
+          color: $lightRed;
+        }
+        &:hover:after {
+          background-color: $lightRed;
+        }
+      }
+    }
+    h2 {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+      color: $lightRed;
+    }
+  }
+}
+.starships {
+  width: 100%;
+  margin: 5rem 0;
+  padding: 0 5rem;
+  &-item {
+    @include flex();
+    width: 100%;
+    background: $bgGradient;
+    border-radius: 10px;
+    margin-bottom: 6rem;
+    height: 80vh;
+    @include fade-right();
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+  img {
+    width: 30rem;
+    padding: 3rem;
+  }
+  &-content {
+    padding: 0 9rem 0 5rem;
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      color: $gold;
+    }
+  }
+}
+#starships-cruiser {
+  img {
+    width: 35rem;
+    padding: 2rem;
+  }
+  .starships-content {
+    padding-left: 2rem;
+  }
+}
+#starships-destroyer {
+  img {
+    width: 40rem;
+  }
+  .starships-content {
+    padding-left: 1rem;
+    padding-right: 5rem;
+  }
+}
+#executor {
+  background-image: url('../images/starships/executor.png');
+  background-size: 110%;
+  background-position-y: 10rem;
+  background-position-x: 2rem;
+  div {
+    margin-left: 0;
+    margin-right: 60%;
+  }
+}

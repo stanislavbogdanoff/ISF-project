@@ -1,0 +1,30 @@
+@import 'variables';
+@import 'mixins';
+
+#cause-hero {
+  @include sec-hero();
+  background-image: url('../images/cause/cause-hero.png');
+  background-position: center;
+  h1 {
+    font-size: 4.5rem;
+    line-height: 4rem;
+    text-align: center;
+  }
+}
+.cause {
+  width: 100%;
+  margin: 5rem 0;
+}
+.cause-item {
+  @include block-ver();
+  @include fade-top();
+  #cause-freedom {
+    background-image: url('../images/cause/freedom.png');
+  }
+  #cause-justice {
+    background-image: url('../images/cause/justice.png');
+  }
+  #cause-security {
+    background-image: url('../images/cause/security.jpg');
+  }
+}

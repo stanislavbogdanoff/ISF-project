@@ -1,0 +1,16 @@
+$deepRed: hsl(0, 100%, 25%);
+$descRed: hsl(358, 83%, 47%);
+$lightRed: hsl(0, 100%, 59%);
+$gold: rgb(214, 137, 65);
+$bg: hsl(240, 60%, 6%);
+$bgHeader: rgba(4, 8, 11, 0.6);
+$deepBlue: rgb(4, 4, 19);
+$white: hsl(0, 0%, 95%);
+$gradLight: hsl(219, 25%, 11%);
+$gradDark: rgb(4, 8, 11);
+
+$redGlow: 0 0 30px 5px $deepRed;
+
+$bgMainHero: linear-gradient(90deg, rgba(3, 6, 19, 0.897) 50%, rgba(255,255,255,0) 100%);
+$bgGradient: linear-gradient($gradLight 0%, $gradDark 100%);
+$redGradient: linear-gradient(0deg, rgb(73, 0, 0) 0%, rgb(126, 0, 0) 100%);

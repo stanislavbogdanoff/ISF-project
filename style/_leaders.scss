@@ -1,0 +1,8 @@
+@import 'variables';
+@import 'mixins';
+
+#leaders-hero {
+  @include sec-hero;
+  background-image: url('../images/leaders/leaders.jpg');
+  background-position: left;
+}
